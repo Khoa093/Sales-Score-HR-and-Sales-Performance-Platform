@@ -102,11 +102,13 @@
   font-size: 16px;
   display: flex;
   align-items: center;
+  
 
 }
 
 .arrow {
-  position: fixed;
+  display: flex;
+  
   width: 9px;
   left: 548px;
 }
