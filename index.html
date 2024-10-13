@@ -10,112 +10,244 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container"> 
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <!-- Logo & Buttons -->
-            
-                <div class="sale-score"><img src="assets/Sale-score.svg" alt="Sale Socre Logo"></div>
-                <button class="support-button"> サポートサイト </button>
-                <div class="explanation">
-                    <div class="arrow-icon">
-                        <img src="./assets/" alt="">
-                    </div>
-                    <a href="explanation.html" class="side-link"> 検査結果画面の解説 </a>
-                </div>
-                <div class="main-features">
-                    <div class="arrow-icon">
-                        <img src="./assets/" alt="">
-                    </div>
-                    <a href="mainfeatures.html" class="side-link">主な機能</a>
-                </div>
-                <div class="guide-by-usage-scenario">
-                    <div class="arrow-icon">
-                        <img src="./assets/" alt="">
-                    </div>
-                    <a href="guide-by-usage-scenario.html" class="side-link">利用シーン別ガイド</a>
-                </div>
-                <div class="first-time-user">
-                    <div class="arrow-icon">
-                        <img src="./assets/" alt="">
-                    </div>
-                    <a href="first-time-user.html" class="side-link">初めてご利用の方へ</a>
-                </div>
-                <div class="FAQ">
-                    <div class="arrow-icon">
-                        <img src="./assets/" alt="">
-                    </div>
-                    <a href="FAQ.html" class="side-link">FAQ</a>
-                </div>
-
-            
-        </div>
-        
-
-        <div class="content">
-            <!-- navbar -->
+    <div class="container">
+        <!-- sidebar -->
+        <button class="burger-menu" onclick="toggleSidebar()">☰</button>
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./assets/Sale-score.svg" alt="SALES SCORE Logo">
+                <button class="support-btn">サポートサイト</button>
+            </div>
+            <nav class="nav-menu">
+                <button class="button">
+                    <span>検査結果画面の解説</span>
+                    <img src="./assets/fa-solid fa-angle-right.svg" alt="arrow" class="arrow"></button>
+                <button class="button">
+                    <span>主な機能 </span>
+                    <img src="./assets/fa-solid fa-angle-right.svg" alt="arrow" class="arrow"></button>
+                <button class="button">
+                    <span>利用シーン別ガイド</span>
+                    <img src="./assets/fa-solid fa-angle-right.svg" alt="arrow" class="arrow"></button>
+                <button class="button">
+                    <span>初めてご利用の方へ</span>
+                    <img src="./assets/fa-solid fa-angle-right.svg" alt="arrow" class="arrow"></button>
+                <button class="button">
+                    <span>FAQ</span>
+                    <img src="./assets/fa-solid fa-angle-right.svg" alt="arrow" class="arrow"></button>
+            </nav>
+        </aside>
+        <!-- main content -->
+        <main class="main-content">
+        <!-- navbar -->
             <div class="navbar">
-
                 <div class="left-section">
-                  <a href="home.html" class="link">
+                  <a href="#" class="link">
                     <img src="./assets/fa-house.svg" alt="Home Icon" class="icon"> トップ
                   </a>
                 </div>
 
                 <div class="right-section">
-                    <a href="login.html" class="link">
+                    <a href="#" class="link">
                         ログイン <img src="./assets/fa-regular fa-envelope.svg" alt="Login Icon" class="login-icon">
                     </a>
-                    <a href="mail.html" class="link">
+                    <a href="#" class="link">
                         お問い合わせ <img src="./assets/fa-solid fa-arrow-up-right-from-square.svg" alt="Mail icon" class="mail-icon">
                     </a>
                 </div>
             </div>
+        <!-- searchbar -->
+            <div class="search-bar">
+                <span class="search-label">どんな事でお困りですか？</span>
+                <div class="search-input-container" >
 
-            <!-- searchbar -->
-            <div class="searchbar">
-                <div class="question">どんな事でお困りですか？</div>
-                <div class="search">
-                    <div class="search-icon"> <img src="./assets/fa-solid fa-magnifying-glass.svg" alt="search icon"></div>
-                    <input type="text" class="search-text" placeholder="キーワードを入力">
+                    <img src="./assets/fa-solid fa-magnifying-glass.svg" alt="Logo" class="search-logo">
+                    <span><input type="text" placeholder="キーワードを入力"></span>
                 </div>
                 <button class="search-button">検索</button>
             </div>
-            <!-- guide -->
-            <!-- title guide -->
-            <div class="title-guide">
-                <img  src="./assets/アートワーク 38.svg" alt="title img" class="title-img">
-                <div class="title-text">
-                    <h1 class="title-heading">利用シーン別ガイド</h1>
-                    <p class="title-heading-description">SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</p>
+        <!-- guide -->
+            <section class="guide">
+                <div class="guide-content">
+                    <img src="./assets/アートワーク 38.svg" alt="Guide Illustration">
+                    <div>
+                        <h2>利用シーン別ガイド</h2>
+                        <p>SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</p>
+                    </div>
                 </div>
-            </div>
-            <div class="guide-buttons">
-                <button class="button">
-                    <img src="./assets/horizontal-bar-chart.svg" alt="button icon" class="button-icon">
-                    受検者の営業活動の特徴を 見える化したい</button>
-                <button class="button">
-                    <img src="./assets/human.svg" alt="button icon" class="button-icon">
-                    ポテンシャルの高い人材を 採用したい</button>
-                <button class="button">
-                    <img src="./assets/line-chart.svg" alt="button icon" class="button-icon">
-                    離職率を改善したい</button>
-                <button class="button">
-                    <img src="./assets/glass.svg" alt="button icon" class="button-icon">
-                    成績優秀層を分析したい</button>
-                <button class="button">
-                    <img src="./assets/door.svg" alt="button icon" class="button-icon">
-                    自社の特徴を理解したい</button>
-                <button class="button">
-                    <img src="./assets/chat-box.svg" alt="button icon" class="button-icon">
-                    社員のコミュニケーションを 改善したい</button>
+                <div class="guide-options">
+                    <button class="option">
+                        <img src="./assets/horizontal-bar-chart.svg" alt="">
+                        <span>受検者の営業活動の特徴を見える化したい</span>
 
-            </div>
+                    </button>
+                    <button class="option">
+                        <img src="./assets/human.svg" alt="">
+                        <span>ポテンシャルの高い人材を採用したい</span>
 
-        </div>
+                    </button>
+                    <button class="option">
+                        <img src="./assets/line-chart.svg" alt="">
+                        <span>離職率を改善したい</span>
+
+                    </button>
+                    <button class="option">
+                        <img src="./assets/glass.svg" alt="">
+                        <span>成績優秀層を分析したい</span>
+
+                    </button>
+                    <button class="option">
+                        <img src="./assets/door.svg" alt="">
+                        <span>自社の特徴を理解したい</span>
+
+                    </button>
+                    <button class="option">
+                        <img src="./assets/chat-box.svg" alt="">
+                        <span>社員のコミュニケーションを改善したい</span>
+                    </button>
+                </div>
+            </section>
+        <!-- data --> 
+            <section class="data-output">
+                <div class="output-header">
+                    <img src="./assets/アートワーク 8.svg" alt="Illustration">
+                    <div>
+                        <h2>検査結果画面の解説</h2>
+                        <p>SALES SCOREのアウトプット項目について紹介します。</p>
+                    </div>
+                </div>
+                <div class="line-above-title"></div>
+                <h3>適性検査のアウトプット</h3>
+                <div class="output-options">
+                    <div class="output-option">
+                        <img src="./assets/summary.svg" alt="データサマリー">
+                        <span>データサマリー</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/detail.svg" alt="データ詳細">
+                        <span>データ詳細</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/compare.svg" alt="データ比較">
+                        <span>データ比較</span>
+                    </div>
+                </div>
+        <!-- company analysis -->
+                <div class="line-above-title-2"></div>
+                <h3>企業傾向分析</h3>
+                <div class="output-options">
+                    <div class="output-option">
+                        <img src="./assets/Analysis 1.png" alt="全体比較">
+                        <span>全体比較</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/Analysis 2.png" alt="営業タイプ傾向">
+                        <span>営業タイプ傾向</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/Analysis 3.png" alt="High-Low分析">
+                        <span>High-Low分析</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/Analysis 4.png" alt="構成比比較">
+                        <span>構成比比較</span>
+                    </div>
+                </div>
+        <!-- result detail -->
+                 <div class="line-above-title-3"></div>
+                 <h3>検査結果詳細</h3>
+                 <div class="output-options">
+                    <div class="output-option">
+                        <img src="./assets/detail-option.png" alt="表示される予測値">
+                        <span>表示される予測値</span>
+                    </div>
+                    <div class="output-option">
+                        <img src="./assets/sale-type.png" alt="表示される営業タイプ">
+                        <span>表示される営業タイプ</span>
+                    </div>
+                 </div>
+            </section>
+        <!-- main features -->
+            <section class="main-features">
+                <div class="feature-header">
+                    <img src="./assets/アートワーク 39.png" alt="">
+                    <div>
+                        <h2>主な機能</h2>
+                        <p>SALES SCOREの利用方法及び、ツールに表示される項目について紹介します。</p>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <div class="feature-column">
+                        <div class="line-above-title-4"></div>
+                        <h4>管理者</h4>
+                        <ul>
+                            <li>管理者の登録・編集</li>
+                            <li>表示される管理者情報</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-5"></div>
+                        <h4>従業員</h4>
+                        <ul>
+                            <li>従業員の登録・編集</li>
+                            <li>表示される従業員情報</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-6"></div>
+                        <h4>応募者</h4>
+                        <ul>
+                            <li>応募者の登録・編集</li>
+                            <li>表示される応募者情報</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-7"></div>
+                        <h4>実績データの登録</h4>
+                        <ul>
+                            <li>実績の登録・編集</li>
+                            <li>分析対象範囲の指定</li>
+                            <li>成績区分の指定</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-8"></div>
+                        <h4>適性検査</h4>
+                        <ul>
+                            <li>適性検査推奨環境</li>
+                            <li>受検メールの送信</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-9"></div>
+                        <h4>ダッシュボード機能</h4>
+                        <ul>
+                            <li>実績データ分析機能</li>
+                            <li>運用サポート機能</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="line-above-title-10"></div>
+                        <h4>契約について</h4>
+                        <ul>
+                            <li>実績データ分析機能</li>
+                            <li>運用サポート機能</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>       
+        </main>
+
     </div>
-
-
-    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Copyright © 2022 SALES SCORE All Rights Reserved.</p>
+        </div>
+        <script>
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('active');
+    }
+</script>
+    </footer>
 </body>
 </html>
